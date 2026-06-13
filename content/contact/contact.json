@@ -1,0 +1,19 @@
+{
+  "pageHeader": {
+    "eyebrow": "Contact",
+    "title": "New Clients — Let's Get You Started",
+    "intro": "Share a few details and we'll follow up with next steps for your consultation."
+  },
+  "form": {
+    "serviceInterestOptions": [
+      "Colors",
+      "Cuts",
+      "Trims",
+      "Wellness & Sensory",
+      "Zodiac Services",
+      "Intuitive Card Readings",
+      "Not Sure Yet"
+    ],
+    "referralOptions": ["Instagram", "Facebook", "Friend / Referral", "Google", "Other"]
+  }
+}

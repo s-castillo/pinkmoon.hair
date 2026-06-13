@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "eyebrow": "Colors, Cuts, Trims.",
+    "headline": "Where celestial",
+    "headlineEmphasis": "intuition meets",
+    "headlineTail": "technique.",
+    "subheadline": "Serving from my home studio for over 6 years.",
+    "location": "San Antonio, TX — By Appointment Only",
+    "primaryCtaLabel": "Book Your Consultation",
+    "primaryCtaHref": "/contact",
+    "backgroundImage": "/images/previous_clients/look-20.jpg.jpeg"
+  },
+  "introBlurb": {
+    "eyebrow": "About",
+    "title": "A Look That Reflects",
+    "titleEmphasis": "You.",
+    "quote": "A good haircut should feel refreshing and empowering.",
+    "paragraphs": [
+      "This is about more than hair. It is about making space for self-care, self-expression, and positive change. I believe the beauty experience should leave you with more than a style you love — it should leave you feeling uplifted, confident, and reconnected to the best version of yourself.",
+      "With over a decade of experience and Texas Certified, I bring a thoughtful balance of technical precision and intuitive artistry to every appointment. Through tarot consultation and one-on-one care in my home studio, I create looks that reflect both your personal style and your personal evolution."
+    ]
+  },
+  "servicesSnapshot": {
+    "eyebrow": "Services",
+    "title": "What I Offer",
+    "items": [
+      { "name": "Colors", "href": "/services" },
+      { "name": "Cuts", "href": "/services" },
+      { "name": "Trims", "href": "/services" },
+      { "name": "Wellness & Sensory", "href": "/services" },
+      { "name": "Zodiac Services", "href": "/services" },
+      { "name": "Intuitive Card Readings", "href": "/services" }
+    ]
+  },
+  "galleryStrip": {
+    "eyebrow": "Past Satisfied Clients",
+    "title": "The Gallery",
+    "images": [
+      {
+        "src": "/images/previous_clients/look-1.jpg.jpeg",
+        "alt": "Pink Moon client look 1",
+        "caption": "Natural Balayage",
+        "process": "Hand-painted balayage with toning gloss",
+        "colors": "Warm honey, soft blonde",
+        "duration": "3 hrs"
+      },
+      {
+        "src": "/images/previous_clients/look-2.jpg.jpeg",
+        "alt": "Pink Moon client look 2",
+        "caption": "Vivid Color",
+        "process": "Full bleach + vivid color application",
+        "colors": "Deep violet, magenta",
+        "duration": "5 hrs"
+      },
+      {
+        "src": "/images/previous_clients/look-3.jpg.jpeg",
+        "alt": "Pink Moon client look 3",
+        "caption": "Dimensional Highlights",
+        "process": "Partial highlights + gloss",
+        "colors": "Caramel, warm brown",
+        "duration": "2.5 hrs"
+      },
+      { "src": "/images/previous_clients/look-4.jpg.jpeg", "alt": "Pink Moon client look 4" },
+      { "src": "/images/previous_clients/look-5.jpg.jpeg", "alt": "Pink Moon client look 5" },
+      { "src": "/images/previous_clients/look-6.jpg.jpeg", "alt": "Pink Moon client look 6" },
+      { "src": "/images/previous_clients/look-7.jpg.jpeg", "alt": "Pink Moon client look 7" },
+      { "src": "/images/previous_clients/look-8.jpg.jpeg", "alt": "Pink Moon client look 8" },
+      { "src": "/images/previous_clients/look-9.jpg.jpeg", "alt": "Pink Moon client look 9" },
+      { "src": "/images/previous_clients/look-10.jpg.jpeg", "alt": "Pink Moon client look 10" },
+      { "src": "/images/previous_clients/look-11.jpg.jpeg", "alt": "Pink Moon client look 11" },
+      { "src": "/images/previous_clients/look-12.jpg.jpeg", "alt": "Pink Moon client look 12" },
+      { "src": "/images/previous_clients/look-13.jpg.jpeg", "alt": "Pink Moon client look 13" },
+      { "src": "/images/previous_clients/look-14.jpg.jpeg", "alt": "Pink Moon client look 14" },
+      { "src": "/images/previous_clients/look-15.jpg.jpeg", "alt": "Pink Moon client look 15" },
+      { "src": "/images/previous_clients/look-16.jpg.jpeg", "alt": "Pink Moon client look 16" },
+      { "src": "/images/previous_clients/look-17.jpg.jpeg", "alt": "Pink Moon client look 17" },
+      { "src": "/images/previous_clients/look-18.jpg.jpeg", "alt": "Pink Moon client look 18" },
+      { "src": "/images/previous_clients/look-19.jpg.jpeg", "alt": "Pink Moon client look 19" },
+      { "src": "/images/previous_clients/look-20.jpg.jpeg", "alt": "Pink Moon client look 20" }
+    ]
+  },
+  "socialProof": {
+    "eyebrow": "Client Love",
+    "title": "What clients are saying",
+    "testimonials": [
+      {
+        "quote": "I felt immediately comfortable and left feeling like the best version of myself.",
+        "author": "Returning Client"
+      },
+      {
+        "quote": "The consultation was thoughtful, and my color came out better than I imagined.",
+        "author": "New Client"
+      },
+      {
+        "quote": "Warm, welcoming, and incredibly skilled. Every visit is consistent and personal.",
+        "author": "Regular Guest"
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "New to Pink Moon? Let's chat first.",
+    "supportingText": "Book a consultation and we'll map out the right service plan for your hair goals.",
+    "ctaLabel": "Book a Consultation",
+    "ctaHref": "/contact"
+  }
+}

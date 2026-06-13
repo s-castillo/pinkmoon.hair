@@ -1,0 +1,21 @@
+{
+  "name": "Pink Moon Salon",
+  "phone": "",
+  "email": "",
+  "address": "Given at appointment confirmation",
+  "hours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "9am - 6pm",
+    "saturday": "9am - 6pm",
+    "sunday": "11am - 4pm"
+  },
+  "social": {
+    "instagram": "https://instagram.com/pinkmoon.hair",
+    "instagramHandle": "@PinkMoon.Hair",
+    "facebook": "https://facebook.com/PinkMoonSalon",
+    "facebookHandle": "Pink Moon Hair"
+  }
+}

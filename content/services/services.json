@@ -1,0 +1,175 @@
+{
+  "pageHeader": {
+    "eyebrow": "Services",
+    "title": "What I Offer",
+    "intro": "Our wellness salon offers more than hair styling — we are focused on bringing wholeness to our clients through self-reflection. Our salon offers an environment for clients to enjoy, relax, and be present. We cultivate a safe space for self-care, self-expression, and positive change. I believe the beauty and wellness experience should leave you with more than a service you love — it should leave you feeling uplifted, confident, and reconnected to the best version of yourself.\n\nWith over a decade of experience as a Texas certified cosmetologist, I bring a thoughtful balance of technical precision and intuitive artistry to every appointment. As a practicing tarot consultant and astrological chart interpreter, I offer one-on-one guidance and care in my home studio. Here at Pink Moon we offer a diverse range of self-care through creating looks, intuitive guidance, and sensory touch services."
+  },
+  "categories": [
+    {
+      "name": "Colors",
+      "services": [
+        {
+          "name": "Natural Balayage",
+          "description": "Soft, sun-kissed dimension hand-painted for a natural, lived-in finish that grows out beautifully.",
+          "price": "Based on consultation"
+        },
+        {
+          "name": "Vivid Balayage",
+          "description": "Bold, expressive color — from pastels to saturated vivids — blended seamlessly into your natural base.",
+          "price": "Based on consultation"
+        },
+        {
+          "name": "Lightning Services",
+          "description": "Full bleach, highlights, or targeted lightening services to achieve your desired lift safely and precisely.",
+          "price": "From $200"
+        },
+        {
+          "name": "Toning Refresh",
+          "description": "Gloss and tone service to revive shine, neutralize brassiness, and extend the life of your color.",
+          "price": "From $65"
+        }
+      ]
+    },
+    {
+      "name": "Cuts",
+      "services": [
+        {
+          "name": "Women's Cut",
+          "description": "Volume, polish, and lasting shape — your hair perfected around your face shape, texture, and lifestyle.",
+          "price": "From $55"
+        },
+        {
+          "name": "Men's Cut",
+          "description": "Precision cuts tailored to your face shape, lifestyle, and energy.",
+          "price": "From $30"
+        },
+        {
+          "name": "Kids Cut",
+          "description": "Gentle, age-appropriate cuts in a calm, welcoming studio environment.",
+          "price": "From $25"
+        }
+      ]
+    },
+    {
+      "name": "Trims",
+      "services": [
+        {
+          "name": "Bang Trim",
+          "description": "Quick fringe maintenance between full appointments. First-time clients receive a complimentary moon phase analysis.",
+          "price": "Complimentary"
+        },
+        {
+          "name": "Maintain Layers",
+          "description": "Keep your shape fresh and your movement alive between full cut appointments. First-time clients receive a complimentary moon phase analysis.",
+          "price": "Complimentary"
+        },
+        {
+          "name": "Ends-Only Clean Up",
+          "description": "Remove split ends and restore softness without altering length or shape. First-time clients receive a complimentary moon phase analysis.",
+          "price": "Complimentary"
+        }
+      ]
+    },
+    {
+      "name": "Wellness & Sensory Services",
+      "services": [
+        {
+          "name": "Luxury Shampoo & Scalp Tingles",
+          "description": "Relaxing shampoo with scalp scratching and tracing.",
+          "price": "$45 · 30 min"
+        },
+        {
+          "name": "Blowout + Scalp Scratch Session",
+          "description": "Professional blowout followed by calming scalp tingles.",
+          "price": "$65–$85 · 1 hr minimum"
+        },
+        {
+          "name": "Scalp Detox & Tingle Ritual",
+          "description": "Clarifying scalp cleanse with sensory scalp stimulation.",
+          "price": "$55 · 45 min"
+        },
+        {
+          "name": "Hair Brushing ASMR Session",
+          "description": "Slow brushing, tracing, and gentle hair play.",
+          "price": "$40 · 30 min"
+        },
+        {
+          "name": "Deep Conditioning + Relaxation Scalp Service",
+          "description": "Conditioning treatment with scalp scratching and aromatherapy.",
+          "price": "$70 · 1 hr"
+        },
+        {
+          "name": "Color Processing Relaxation Add-On",
+          "description": "Arm scratching, scalp tracing, or shoulder tingles during color processing time.",
+          "price": "+$15"
+        }
+      ]
+    },
+    {
+      "name": "Wellness Add-Ons",
+      "services": [
+        {
+          "name": "Aromatherapy",
+          "description": "Calming essential oil blends to deepen your relaxation experience.",
+          "price": "+$5"
+        },
+        {
+          "name": "Warm Towel Ritual",
+          "description": "Soothing warm towel treatment to relax the scalp and neck.",
+          "price": "+$10"
+        },
+        {
+          "name": "Extended Arm Scratching",
+          "description": "Additional time dedicated to arm tracing and sensory relaxation.",
+          "price": "+$10"
+        },
+        {
+          "name": "Scalp Oil Treatment",
+          "description": "Nourishing oil applied to the scalp during your sensory session.",
+          "price": "+$15"
+        },
+        {
+          "name": "Session Rates",
+          "description": "Book any duration as a standalone appointment or add on to your hair service.",
+          "options": [
+            { "label": "20 Minutes", "price": "$30–$40" },
+            { "label": "30 Minutes", "price": "$45–$60" },
+            { "label": "45 Minutes", "price": "$65–$85" },
+            { "label": "60 Minutes", "price": "$90–$125" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zodiac Services",
+      "services": [
+        {
+          "name": "Relationship Compatibility Reading",
+          "description": "Discover how your chart aligns with a romantic partner or love interest. Explores crush compatibility, communication dynamics, and emotional compatibility to reveal what draws you together — and where you may need to grow.",
+          "price": "$45–$90"
+        },
+        {
+          "name": "Friendship / Family Compatibility Reading",
+          "description": "Uncover the astrological patterns behind your closest bonds — from mother/daughter dynamics and sibling compatibility to friendship patterns and coworker communication. Understand why some connections feel effortless and others create friction.",
+          "price": "$25–$60"
+        },
+        {
+          "name": "\"Ask One Question\" Astrology Reading",
+          "description": "Bring your most pressing question and receive a focused chart reading built around it. Great for clarity on things like: why you struggle in relationships, what career energy stands out in your chart, or why people tend to misunderstand you.",
+          "price": "$10–$25"
+        },
+        {
+          "name": "\"Big 3\" Mini Reading",
+          "description": "A snapshot of your Sun, Moon, and Rising signs — your personality overview, emotional style, and outward image. Includes your key strengths, challenges, and basic relationship tendencies.",
+          "price": "$15–$35"
+        }
+      ]
+    }
+  ],
+  "consultationCta": {
+    "headline": "Not sure what to book?",
+    "supportingText": "Start with a free consultation and get recommendations based on your hair goals, maintenance routine, and timeline.",
+    "ctaLabel": "Book a Free Consultation",
+    "ctaHref": "/contact"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "pageHeader": {
+    "eyebrow": "About",
+    "title": "About Pink Moon Salon",
+    "intro": "Pink Moon is a salon-wellness studio space built around thoughtful hair care and genuine connection. Our single chair studio offers a comfortable place for clients to relax and unwind, without the worry of any outside interactions. This one-on-one experience helps our clientele have a more personalized service experience."
+  },
+  "salonStory": {
+    "title": "Our Story",
+    "paragraphs": [
+      "We began with a simple belief: salon visits should feel grounding, affirming, and personal. Every appointment is approached with care, collaboration, and tailored to your goals and lifestyle.",
+      "After ten years of hair focused services, we decided to expand our offerings. Whether you choose a sensory touch service to help you unwind and be present, or an in-depth tarot or oracle consultation reading for advice or messaging — Pink Moon is a space where clients can leave feeling revitalized in more ways than one.",
+      "Our mission is to offer our clientele a place to feel connected with themselves inside and out. After doing chair rental for six years, my husband and I decided to build an at-home studio equipped with everything our clients need. Throughout the years I offered tarot readings alongside hair services, which became the origin of what is now Pink Moon.",
+      "Hair color, treatments, and cuts are transformational — and through tarot I am able to convey advice or messaging that helps personalize the overall experience. My twenty years of astrological research and knowledge greatly assists me in connecting with clients. Now with sensory services, I hope to connect with body and mind in a way that allows our clients to feel safe and refreshed."
+    ]
+  },
+  "team": [
+    {
+      "name": "Sarah",
+      "specialty": "Color + lived-in transformations",
+      "bio": "Texas certified stylist focused on creating natural movement, custom tones, and confidence-forward looks.",
+      "image": "/images/team/stylist-1.jpg"
+    },
+    {
+      "name": "Salon Manager — Husband Shawn",
+      "specialty": "Operations + Client Experience",
+      "bio": "Keeping the studio running smoothly so every guest experience is seamless from first contact to final look.",
+      "image": "/images/team/stylist-2.jpg"
+    }
+  ],
+  "values": [
+    {
+      "title": "Community",
+      "description": "A welcoming environment where every guest feels seen and supported."
+    },
+    {
+      "title": "Craft",
+      "description": "Technical precision paired with modern, personalized styling."
+    },
+    {
+      "title": "Care",
+      "description": "Real conversations, honest guidance, and service built around long-term hair health."
+    }
+  ]
+}

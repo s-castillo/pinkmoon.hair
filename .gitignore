@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# environment
+.env
+.env.local
+.env.*.local
+
+# build artifacts
+tsconfig.tsbuildinfo
+
+# OS
+.DS_Store
+
+# editor
+.vscode/
+*.swp
