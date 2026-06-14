@@ -17,7 +17,7 @@ export function ComingSoon({
   facebookUrl,
 }: ComingSoonProps) {
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 text-center">
+    <section className="relative flex min-h-screen flex-col items-start justify-center overflow-hidden px-8 md:px-16 text-left">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -37,8 +37,8 @@ export function ComingSoon({
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex max-w-[640px] flex-col items-center gap-0">
-        <PinkMoonLogo variant="hero" className="mb-8 w-[280px] md:w-[360px]" />
+      <div className="relative z-10 flex max-w-[600px] flex-col items-start">
+        <PinkMoonLogo variant="hero" className="mb-8 w-[240px] md:w-[320px]" />
 
         {/* Coming Soon pill */}
         <p className="mb-7 inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-5 py-2 text-[10px] uppercase tracking-[0.28em] text-brand">
