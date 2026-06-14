@@ -71,17 +71,18 @@ export function ConsultationForm({ serviceInterestOptions, referralOptions }: Co
       referralFriendName: friendName || undefined,
     };
 
+    const FORMSPREE_ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || "";
+
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload),
       });
 
       if (!response.ok) {
-        const failure = (await response.json()) as { error?: string };
         setStatusType("error");
-        setStatusMessage(failure.error || "Unable to send inquiry right now. Please try again.");
+        setStatusMessage("Unable to send inquiry right now. Please try again.");
         return;
       }
 
