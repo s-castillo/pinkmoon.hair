@@ -57,14 +57,6 @@ export async function Footer() {
         <div>
           <p className="mb-4 text-[10px] uppercase tracking-[0.22em] text-brand">Location</p>
           <p className="text-[13px] leading-relaxed text-white/40">{info.address}</p>
-          <div className="mt-6">
-            <Link
-              href="/contact"
-              className="inline-block rounded-full bg-brand px-9 py-4 text-[11px] font-bold uppercase tracking-[0.18em] text-[#25232f] transition hover:opacity-90"
-            >
-              Book Now
-            </Link>
-          </div>
         </div>
 
       </div>

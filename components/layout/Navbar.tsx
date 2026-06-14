@@ -47,17 +47,6 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-3">
-          <Link
-            href="/contact"
-            className="rounded-full border border-[0.5px] border-brand px-[22px] py-[9px] text-[11px] uppercase tracking-[0.16em] text-brand transition hover:text-[#25232f]"
-            style={{ backgroundColor: "rgba(255,112,219,0.25)" }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "rgba(255,112,219,1)")}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "rgba(255,112,219,0.25)")}
-            onClick={() => setOpen(false)}
-          >
-            Book Now
-          </Link>
-
           {/* Hamburger — mobile only */}
           <button
             className="flex flex-col justify-center gap-[5px] p-1 md:hidden"
@@ -88,16 +77,6 @@ export function Navbar() {
               </li>
             ))}
           </ul>
-          <Link
-            href="/contact"
-            className="mt-8 inline-flex rounded-full border border-[0.5px] border-brand px-[22px] py-[9px] text-[11px] uppercase tracking-[0.16em] text-brand transition hover:text-[#25232f]"
-            style={{ backgroundColor: "rgba(255,112,219,0.25)" }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "rgba(255,112,219,1)")}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "rgba(255,112,219,0.25)")}
-            onClick={() => setOpen(false)}
-          >
-            Book Now
-          </Link>
         </div>
       )}
     </header>
