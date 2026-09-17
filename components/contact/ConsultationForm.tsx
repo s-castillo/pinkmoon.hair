@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 type ConsultationFormProps = {
   serviceInterestOptions: string[];
@@ -30,9 +31,7 @@ function SelectWrapper({ children }: { children: React.ReactNode }) {
 }
 
 export function ConsultationForm({ serviceInterestOptions, referralOptions }: ConsultationFormProps) {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [statusMessage, setStatusMessage] = useState<string | null>(null);
-  const [statusType, setStatusType] = useState<"success" | "error" | null>(null);
+  const [state, handleSubmit] = useForm("mojzrajk");
   const [selectedServices, setSelectedServices] = useState<Set<string>>(new Set());
   const [referralSource, setReferralSource] = useState("");
   const [friendName, setFriendName] = useState("");
@@ -47,12 +46,8 @@ export function ConsultationForm({ serviceInterestOptions, referralOptions }: Co
     });
   }
 
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setIsSubmitting(true);
-    setStatusMessage(null);
-    setStatusType(null);
-
     const formData = new FormData(event.currentTarget);
 
     const resolvedReferral =
@@ -68,50 +63,43 @@ export function ConsultationForm({ serviceInterestOptions, referralOptions }: Co
       serviceInterest: Array.from(selectedServices).join(", ") || "Not specified",
       hairDescription: String(formData.get("hairDescription") || ""),
       referralSource: resolvedReferral,
-      referralFriendName: friendName || undefined,
+      ...(friendName ? { referralFriendName: friendName } : {}),
     };
 
-    const FORMSPREE_ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || "";
+    await handleSubmit(payload);
 
-    try {
-      const response = await fetch(FORMSPREE_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      if (!response.ok) {
-        setStatusType("error");
-        setStatusMessage("Unable to send inquiry right now. Please try again.");
-        return;
-      }
-
-      event.currentTarget.reset();
+    if (state.succeeded) {
       setSelectedServices(new Set());
       setReferralSource("");
       setFriendName("");
       setOtherReferral("");
-      setStatusType("success");
-      setStatusMessage("Thanks! Your inquiry has been sent. We'll follow up soon.");
-    } catch {
-      setStatusType("error");
-      setStatusMessage("Network issue while sending inquiry. Please try again.");
-    } finally {
-      setIsSubmitting(false);
     }
   }
 
+  if (state.succeeded) {
+    return (
+      <div className="flex min-h-[200px] items-center justify-center rounded-2xl border border-brand/30 bg-brand/5 p-10 text-center">
+        <div>
+          <p className="font-display text-2xl text-white">Thank you!</p>
+          <p className="mt-2 text-[15px] text-white/55">Your inquiry has been sent. We&apos;ll follow up soon.</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <form onSubmit={handleSubmit} className="space-y-8">
+    <form onSubmit={onSubmit} className="space-y-8">
       {/* Name */}
       <div className="grid gap-6 md:grid-cols-2">
         <div>
           <label className={labelClass} htmlFor="firstName">First Name</label>
           <input id="firstName" name="firstName" className={inputClass} placeholder="Jane" required />
+          <ValidationError field="firstName" errors={state.errors} className="mt-1 text-xs text-red-300" />
         </div>
         <div>
           <label className={labelClass} htmlFor="lastName">Last Name</label>
           <input id="lastName" name="lastName" className={inputClass} placeholder="Doe" required />
+          <ValidationError field="lastName" errors={state.errors} className="mt-1 text-xs text-red-300" />
         </div>
       </div>
 
@@ -120,6 +108,7 @@ export function ConsultationForm({ serviceInterestOptions, referralOptions }: Co
         <div>
           <label className={labelClass} htmlFor="email">Email</label>
           <input id="email" name="email" type="email" className={inputClass} placeholder="jane@example.com" required />
+          <ValidationError field="email" errors={state.errors} className="mt-1 text-xs text-red-300" />
         </div>
         <div>
           <label className={labelClass} htmlFor="phone">
@@ -160,7 +149,7 @@ export function ConsultationForm({ serviceInterestOptions, referralOptions }: Co
         </div>
       </div>
 
-      {/* Hair description — full border */}
+      {/* Hair description */}
       <div>
         <label className={labelClass} htmlFor="hairDescription">About Your Hair</label>
         <textarea
@@ -170,6 +159,7 @@ export function ConsultationForm({ serviceInterestOptions, referralOptions }: Co
           placeholder="Tell us a little about your hair and what you're looking for."
           required
         />
+        <ValidationError field="hairDescription" errors={state.errors} className="mt-1 text-xs text-red-300" />
       </div>
 
       {/* Referral source */}
@@ -194,7 +184,6 @@ export function ConsultationForm({ serviceInterestOptions, referralOptions }: Co
           </select>
         </SelectWrapper>
 
-        {/* Friend name */}
         {referralSource === "Friend / Referral" && (
           <div className="mt-5">
             <label className={labelClass} htmlFor="friendName">
@@ -210,7 +199,6 @@ export function ConsultationForm({ serviceInterestOptions, referralOptions }: Co
           </div>
         )}
 
-        {/* Other — custom text */}
         {referralSource === "Other" && (
           <div className="mt-5">
             <label className={labelClass} htmlFor="otherReferral">How did you find us?</label>
@@ -225,18 +213,14 @@ export function ConsultationForm({ serviceInterestOptions, referralOptions }: Co
         )}
       </div>
 
-      {statusMessage ? (
-        <p className={`text-sm ${statusType === "success" ? "text-green-300" : "text-red-300"}`}>
-          {statusMessage}
-        </p>
-      ) : null}
+      <ValidationError errors={state.errors} className="text-sm text-red-300" />
 
       <button
         type="submit"
-        disabled={isSubmitting}
+        disabled={state.submitting}
         className="inline-block rounded-full bg-brand px-9 py-4 text-[11px] font-bold uppercase tracking-[0.18em] text-[#25232f] transition hover:opacity-90 active:scale-[0.98] disabled:opacity-50"
       >
-        {isSubmitting ? "Sending..." : "Send My Inquiry"}
+        {state.submitting ? "Sending..." : "Send My Inquiry"}
       </button>
     </form>
   );
