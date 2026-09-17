@@ -24,12 +24,14 @@
     "eyebrow": "Services",
     "title": "What I Offer",
     "items": [
-      { "name": "Colors", "href": "/services" },
-      { "name": "Cuts", "href": "/services" },
-      { "name": "Trims", "href": "/services" },
-      { "name": "Wellness & Sensory", "href": "/services" },
-      { "name": "Zodiac Services", "href": "/services" },
-      { "name": "Intuitive Card Readings", "href": "/services" }
+      { "name": "Haircuts & Styling", "href": "/services" },
+      { "name": "Revitalizing Hair", "href": "/services" },
+      { "name": "Wellness & ASMR", "href": "/services" },
+      { "name": "Body Waxing", "href": "/services" },
+      { "name": "Aura Healing", "href": "/services" },
+      { "name": "Zodiac Readings", "href": "/services" },
+      { "name": "Card Readings", "href": "/services" },
+      { "name": "Wellness Add-Ons", "href": "/services" }
     ]
   },
   "galleryStrip": {

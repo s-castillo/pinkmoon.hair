@@ -4,6 +4,7 @@ import path from "node:path";
 
 type TeamMember = {
   name: string;
+  role?: string;
   specialty: string;
   bio: string;
   image: string;
@@ -28,7 +29,7 @@ export async function TeamGrid({ members }: TeamGridProps) {
 
   return (
     <section className="mt-10">
-      <h2 className="font-display text-3xl text-white md:text-4xl">Meet the Team</h2>
+      <h2 className="text-center font-display text-3xl text-white md:text-4xl">Meet the Team</h2>
       <div className="mt-4 grid gap-4 md:grid-cols-2">
         {members.map((member, i) => (
           <article key={member.name} className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
@@ -44,7 +45,10 @@ export async function TeamGrid({ members }: TeamGridProps) {
               )}
             </div>
             <div className="p-5">
-              <h3 className="font-display text-2xl text-accent">{member.name}</h3>
+              <h3 className="font-display text-2xl text-brand">{member.name}</h3>
+              {member.role && (
+                <p className="mt-0.5 text-[11px] uppercase tracking-[0.18em] text-white/35">{member.role}</p>
+              )}
               <p className="mt-1 text-xs uppercase tracking-[0.14em] text-brand">{member.specialty}</p>
               <p className="mt-3 text-sm leading-relaxed text-muted">{member.bio}</p>
             </div>

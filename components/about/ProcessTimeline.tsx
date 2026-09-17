@@ -45,7 +45,7 @@ const steps = [
 
 export function ProcessTimeline() {
   return (
-    <section className="mt-16">
+    <section className="mt-16 text-center">
       <p className="text-[10px] uppercase tracking-[0.28em] text-brand before:mr-1.5 before:opacity-50 before:content-['—']">
         How It Works
       </p>
@@ -56,13 +56,13 @@ export function ProcessTimeline() {
         The Pink Moon <em className="italic text-brand">Experience</em>
       </h2>
 
-      <div className="mt-10 relative">
+      <div className="mt-10 relative mx-auto max-w-[560px] text-left">
         {/* Vertical line */}
         <div className="absolute left-[19px] top-0 bottom-0 w-px bg-gradient-to-b from-brand/40 via-brand/20 to-transparent md:left-[27px]" />
 
         <ol className="space-y-0">
           {steps.map((step, i) => (
-            <li key={step.number} className="relative flex gap-6 pb-10 last:pb-0 md:gap-8">
+            <li key={step.number} className="relative flex items-center gap-6 pb-10 last:pb-0 md:gap-8">
               {/* Node */}
               <div className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-brand/40 bg-[#25232f] md:h-14 md:w-14">
                 <span className="font-display text-[13px] font-light text-brand md:text-[15px]">
@@ -71,7 +71,7 @@ export function ProcessTimeline() {
               </div>
 
               {/* Content */}
-              <div className="pt-1.5">
+              <div>
                 <p className="text-[10px] uppercase tracking-[0.22em] text-brand/60">{step.label}</p>
                 <h3 className="mt-1 font-display text-xl font-light text-white md:text-2xl">{step.title}</h3>
                 <p className="mt-2 max-w-md text-[14px] leading-[1.8] text-white/45">{step.description}</p>

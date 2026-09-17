@@ -17,7 +17,7 @@ export function ComingSoon({
   facebookUrl,
 }: ComingSoonProps) {
   return (
-    <section className="relative flex min-h-screen flex-col items-start justify-center overflow-hidden px-8 md:px-16 text-left">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-8 text-center md:px-16">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -37,7 +37,7 @@ export function ComingSoon({
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex max-w-[600px] flex-col items-start">
+      <div className="relative z-10 flex max-w-[600px] flex-col items-center">
         <PinkMoonLogo variant="hero" className="mb-8 w-[240px] md:w-[320px]" />
 
         {/* Coming Soon pill */}
@@ -58,7 +58,7 @@ export function ComingSoon({
           is on its way.
         </h1>
 
-        <p className="mt-6 max-w-[480px] text-[16px] leading-relaxed text-white/55">
+        <p className="mx-auto mt-6 max-w-[480px] text-[16px] leading-relaxed text-white/55">
           A warm, personal hair experience specializing in colors, cuts, and trims —
           by appointment from a private home studio in San Antonio, TX.
         </p>

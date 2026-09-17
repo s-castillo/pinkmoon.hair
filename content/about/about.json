@@ -16,12 +16,14 @@
   "team": [
     {
       "name": "Sarah",
+      "role": "Owner & Stylist",
       "specialty": "Color + lived-in transformations",
       "bio": "Texas certified stylist focused on creating natural movement, custom tones, and confidence-forward looks.",
       "image": "/images/team/stylist-1.jpg"
     },
     {
-      "name": "Salon Manager — Husband Shawn",
+      "name": "Shawn",
+      "role": "Salon Manager & Husband",
       "specialty": "Operations + Client Experience",
       "bio": "Keeping the studio running smoothly so every guest experience is seamless from first contact to final look.",
       "image": "/images/team/stylist-2.jpg"

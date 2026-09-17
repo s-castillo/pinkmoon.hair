@@ -8,7 +8,7 @@ type GalleryStripProps = {
 
 export function GalleryStrip({ eyebrow, title, images }: GalleryStripProps) {
   return (
-    <section className="mx-auto w-full max-w-[820px] px-6 pb-20 md:pb-[100px]">
+    <section className="mx-auto w-full max-w-[820px] px-6 pb-20 text-center md:pb-[100px]">
       <p className="text-[10px] uppercase tracking-[0.28em] text-brand before:mr-1.5 before:opacity-50 before:content-['—']">
         {eyebrow}
       </p>

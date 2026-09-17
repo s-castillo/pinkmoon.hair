@@ -10,7 +10,7 @@ type ConsultationFormProps = {
 const inputClass =
   "w-full border-b border-brand/25 bg-transparent pb-2.5 pt-2.5 text-[15px] font-light text-white outline-none placeholder:text-white/18 transition-colors focus:border-brand";
 
-const labelClass = "block text-[10px] uppercase tracking-[0.2em] text-white/35";
+const labelClass = "block text-[10px] uppercase tracking-[0.2em] text-white/65";
 
 function SelectWrapper({ children }: { children: React.ReactNode }) {
   return (

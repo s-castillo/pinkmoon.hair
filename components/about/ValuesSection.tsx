@@ -9,7 +9,7 @@ type ValuesSectionProps = {
 
 export function ValuesSection({ values }: ValuesSectionProps) {
   return (
-    <section className="mt-10">
+    <section className="mt-10 text-center">
       <h2 className="font-display text-3xl text-white md:text-4xl">What We Value</h2>
       <div className="mt-4 grid gap-4 md:grid-cols-3">
         {values.map((value) => (

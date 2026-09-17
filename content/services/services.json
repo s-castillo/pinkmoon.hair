@@ -6,72 +6,65 @@
   },
   "categories": [
     {
-      "name": "Colors",
+      "name": "Haircuts & Styling",
+      "description": "All haircut prices begin for the first hour — price goes up an additional $25 every extra hour. All haircut consultations are complimentary and up to fifteen minutes. Please note: Blow Dry services are a separate additional charge.",
       "services": [
         {
-          "name": "Natural Balayage",
-          "description": "Soft, sun-kissed dimension hand-painted for a natural, lived-in finish that grows out beautifully.",
-          "price": "Based on consultation"
+          "name": "Long Hair Cut",
+          "description": "Hair length beginning past the shoulders and down, finished with a style.",
+          "price": "Starting at $50"
         },
         {
-          "name": "Vivid Balayage",
-          "description": "Bold, expressive color — from pastels to saturated vivids — blended seamlessly into your natural base.",
-          "price": "Based on consultation"
+          "name": "Short Hair Cut",
+          "description": "Hair length above the shoulders and up, finished with a style.",
+          "price": "Starting at $40"
         },
         {
-          "name": "Lightning Services",
-          "description": "Full bleach, highlights, or targeted lightening services to achieve your desired lift safely and precisely.",
-          "price": "From $200"
+          "name": "Clipper / Cut Combo",
+          "description": "Clippers on the sides with scissor cutting and thinning on top.",
+          "price": "Starting at $30"
         },
         {
-          "name": "Toning Refresh",
-          "description": "Gloss and tone service to revive shine, neutralize brassiness, and extend the life of your color.",
-          "price": "From $65"
+          "name": "Blow Dry Style",
+          "description": "A simple blow dry to remove frizz and seal in products and treatments.",
+          "options": [
+            { "label": "Standalone", "price": "$60" },
+            { "label": "Add-on", "price": "$20" }
+          ]
         }
       ]
     },
     {
-      "name": "Cuts",
+      "name": "Revitalizing Hair Services",
+      "description": "Our revitalizing haircuts are done with spiritual intention to help boost and heal different moods. These services include all standard hair products and treatments plus a Reiki reading on head and shoulders, crystal work, and a single oracle card reading.",
       "services": [
         {
-          "name": "Women's Cut",
-          "description": "Volume, polish, and lasting shape — your hair perfected around your face shape, texture, and lifestyle.",
-          "price": "From $55"
+          "name": "Cleansing Trim",
+          "description": "Maintenance, strengthening, and centering. Trimming layers optional.",
+          "price": "Starting at $50"
         },
         {
-          "name": "Men's Cut",
-          "description": "Precision cuts tailored to your face shape, lifestyle, and energy.",
-          "price": "From $30"
+          "name": "Phoenix Cut",
+          "description": "Creating a new style or refreshing an old one. Great for removing bulk with thinning and layering — perfect for manifesting goals. Layers optional.",
+          "price": "Starting at $60"
         },
         {
-          "name": "Kids Cut",
-          "description": "Gentle, age-appropriate cuts in a calm, welcoming studio environment.",
-          "price": "From $25"
+          "name": "Pixies & Buzzcuts",
+          "description": "Short haircuts that expose the neck — clippers and non-clippers welcome.",
+          "price": "Starting at $40"
+        },
+        {
+          "name": "Smoothing Blow Dry",
+          "description": "A simple blow dry to remove frizz and seal in products and treatments.",
+          "options": [
+            { "label": "Standalone", "price": "$60" },
+            { "label": "Add-on", "price": "$20" }
+          ]
         }
       ]
     },
     {
-      "name": "Trims",
-      "services": [
-        {
-          "name": "Bang Trim",
-          "description": "Quick fringe maintenance between full appointments. First-time clients receive a complimentary moon phase analysis.",
-          "price": "Complimentary"
-        },
-        {
-          "name": "Maintain Layers",
-          "description": "Keep your shape fresh and your movement alive between full cut appointments. First-time clients receive a complimentary moon phase analysis.",
-          "price": "Complimentary"
-        },
-        {
-          "name": "Ends-Only Clean Up",
-          "description": "Remove split ends and restore softness without altering length or shape. First-time clients receive a complimentary moon phase analysis.",
-          "price": "Complimentary"
-        }
-      ]
-    },
-    {
-      "name": "Wellness & Sensory Services",
+      "name": "Hair Treatments, Wellness & ASMR Sensory Services",
       "services": [
         {
           "name": "Luxury Shampoo & Scalp Tingles",
@@ -79,29 +72,29 @@
           "price": "$45 · 30 min"
         },
         {
-          "name": "Blowout + Scalp Scratch Session",
-          "description": "Professional blowout followed by calming scalp tingles.",
-          "price": "$65–$85 · 1 hr minimum"
+          "name": "Smoothing Blow Dry + Scalp Scratch Session",
+          "description": "Luxury Shampoo & Scalp Tingles followed by a Blow Dry Style and hair/scalp play.",
+          "price": "$100 · 1 hour"
         },
         {
           "name": "Scalp Detox & Tingle Ritual",
-          "description": "Clarifying scalp cleanse with sensory scalp stimulation.",
+          "description": "Clarifying scalp cleansing treatment followed with sensory scalp stimulation. Great for dry or sensitive scalps and cleansing product build up.",
           "price": "$55 · 45 min"
+        },
+        {
+          "name": "Bleach Revival & Scalp Tingles",
+          "description": "Refresh dried, tired, and bland bleached hair and restore balance with our blonde rejuvenation treatment. We clarify prelightened hair by removing build-up with a tingling clarifying treatment, follow up with a treatment for bleach processed hair, and finish with leave-in conditioning products designed for prelightened hair.",
+          "price": "$65 · 50 min"
+        },
+        {
+          "name": "Luxury Conditioning & Scalp Tingles",
+          "description": "A relaxing deep conditioning service with scalp tingle treatments tailored to your needs.",
+          "price": "$60 · 1 hour"
         },
         {
           "name": "Hair Brushing ASMR Session",
           "description": "Slow brushing, tracing, and gentle hair play.",
           "price": "$40 · 30 min"
-        },
-        {
-          "name": "Deep Conditioning + Relaxation Scalp Service",
-          "description": "Conditioning treatment with scalp scratching and aromatherapy.",
-          "price": "$70 · 1 hr"
-        },
-        {
-          "name": "Color Processing Relaxation Add-On",
-          "description": "Arm scratching, scalp tracing, or shoulder tingles during color processing time.",
-          "price": "+$15"
         }
       ]
     },
@@ -110,65 +103,112 @@
       "services": [
         {
           "name": "Aromatherapy",
-          "description": "Calming essential oil blends to deepen your relaxation experience.",
-          "price": "+$5"
+          "description": "Choose your scent: Jasmine, Eucalyptus, Citrus, Peppermint, or Lavender.",
+          "price": "Add-on"
         },
         {
           "name": "Warm Towel Ritual",
           "description": "Soothing warm towel treatment to relax the scalp and neck.",
-          "price": "+$10"
+          "price": "Add-on"
         },
         {
-          "name": "Extended Arm Scratching",
+          "name": "Extended Tingle Services",
           "description": "Additional time dedicated to arm tracing and sensory relaxation.",
-          "price": "+$10"
-        },
-        {
-          "name": "Scalp Oil Treatment",
-          "description": "Nourishing oil applied to the scalp during your sensory session.",
-          "price": "+$15"
-        },
-        {
-          "name": "Session Rates",
-          "description": "Book any duration as a standalone appointment or add on to your hair service.",
-          "options": [
-            { "label": "20 Minutes", "price": "$30–$40" },
-            { "label": "30 Minutes", "price": "$45–$60" },
-            { "label": "45 Minutes", "price": "$65–$85" },
-            { "label": "60 Minutes", "price": "$90–$125" }
-          ]
+          "price": "+$15 / 15 min"
         }
       ]
     },
     {
-      "name": "Zodiac Services",
+      "name": "Body Waxing",
+      "description": "Nothing says self-care like body waxing. Whether it's underarms, legs, or brazilians — at Pink Moon we offer a calm setting to help you unwind and ease into our hair removal services.",
+      "services": [
+        {
+          "name": "Brazilian",
+          "description": "",
+          "price": "$65"
+        },
+        {
+          "name": "Bikini Line",
+          "description": "",
+          "price": "$50"
+        },
+        {
+          "name": "Full Legs",
+          "description": "",
+          "price": "$85"
+        },
+        {
+          "name": "Upper Legs",
+          "description": "",
+          "price": "$55"
+        },
+        {
+          "name": "Lower Legs",
+          "description": "",
+          "price": "$50"
+        }
+      ]
+    },
+    {
+      "name": "Aura Healing Service",
+      "services": [
+        {
+          "name": "Aura Healing",
+          "description": "Using Reiki techniques, crystals, incense (and/or aromatherapy), as well as some light physical touch techniques — this service is for centering, relaxing, and channeling your spirit.",
+          "price": "$40"
+        }
+      ]
+    },
+    {
+      "name": "Zodiac Readings",
+      "description": "All zodiac readings come with complimentary consulting customized per client.",
       "services": [
         {
           "name": "Relationship Compatibility Reading",
           "description": "Discover how your chart aligns with a romantic partner or love interest. Explores crush compatibility, communication dynamics, and emotional compatibility to reveal what draws you together — and where you may need to grow.",
-          "price": "$45–$90"
+          "price": "Starting at $30"
         },
         {
           "name": "Friendship / Family Compatibility Reading",
-          "description": "Uncover the astrological patterns behind your closest bonds — from mother/daughter dynamics and sibling compatibility to friendship patterns and coworker communication. Understand why some connections feel effortless and others create friction.",
-          "price": "$25–$60"
+          "description": "Uncover the astrological patterns behind your closest bonds — from mother/daughter dynamics and sibling compatibility to friendship patterns and coworker communication. Understand why you connect effortlessly in some ways, and what you need to work on for deeper understanding.",
+          "price": "$30"
         },
         {
-          "name": "\"Ask One Question\" Astrology Reading",
+          "name": "Natal Chart Reading",
+          "description": "Go beyond your Big 3 and discover more about the other planet and house placements to understand your own unique astrological makeup.",
+          "price": "$30"
+        },
+        {
+          "name": "\"Ask One Question\" Zodiac Reading",
           "description": "Bring your most pressing question and receive a focused chart reading built around it. Great for clarity on things like: why you struggle in relationships, what career energy stands out in your chart, or why people tend to misunderstand you.",
-          "price": "$10–$25"
+          "price": "$35"
         },
         {
           "name": "\"Big 3\" Mini Reading",
-          "description": "A snapshot of your Sun, Moon, and Rising signs — your personality overview, emotional style, and outward image. Includes your key strengths, challenges, and basic relationship tendencies.",
+          "description": "A snapshot of your Sun, Moon, and Rising signs — your personality overview, emotional style, and outward image.",
           "price": "$15–$35"
+        }
+      ]
+    },
+    {
+      "name": "Card Readings",
+      "services": [
+        {
+          "name": "\"Ask One Question\" Tarot Reading",
+          "description": "Whether you are curious about a question, you might be surprised by the answer. Draw up to two cards in a ten-minute reading.",
+          "price": "$15"
+        },
+        {
+          "name": "Extended Tarot Reading",
+          "description": "A deeper reading exploring themes, patterns, and guidance across multiple cards. Available in 30, 45, or 60-minute sessions.",
+          "price": "Contact for pricing"
         }
       ]
     }
   ],
   "consultationCta": {
     "headline": "Not sure what to book?",
-    "supportingText": "Start with a free consultation and get recommendations based on your hair goals, maintenance routine, and timeline.",
+    "supportingText": "Start with a free consultation and get recommendations tailored to your hair goals, wellness needs, and timeline.",
     "ctaLabel": "Book a Free Consultation",
     "ctaHref": "/contact"
   }

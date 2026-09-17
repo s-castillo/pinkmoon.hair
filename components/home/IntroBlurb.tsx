@@ -8,7 +8,7 @@ type IntroBlurbProps = {
 
 export function IntroBlurb({ eyebrow, title, titleEmphasis, quote, paragraphs }: IntroBlurbProps) {
   return (
-    <section className="mx-auto w-full max-w-[820px] px-6 py-20 md:py-[100px]">
+    <section className="mx-auto w-full max-w-[820px] px-6 py-20 text-center md:py-[100px]">
       <p className="text-[10px] uppercase tracking-[0.28em] text-brand before:mr-1.5 before:opacity-50 before:content-['—']">
         {eyebrow}
       </p>
@@ -20,13 +20,13 @@ export function IntroBlurb({ eyebrow, title, titleEmphasis, quote, paragraphs }:
         {title} <em className="italic text-brand">{titleEmphasis}</em>
       </h2>
 
-      <div className="my-6 h-px max-w-[60px] bg-brand/30" />
+      <div className="mx-auto my-6 h-px w-[60px] bg-brand/30" />
 
       <p className="mb-6 font-display text-xl italic text-white/70">&ldquo;{quote}&rdquo;</p>
 
       <div className="space-y-5">
         {paragraphs.map((p) => (
-          <p key={p} className="max-w-[520px] text-[15px] leading-[1.8] text-white/55">
+          <p key={p} className="w-full text-[15px] leading-[1.8] text-white/55">
             {p}
           </p>
         ))}
